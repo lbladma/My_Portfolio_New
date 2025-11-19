@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taoufik Ammi — Developer & Cybersecurity Enthusiast</title>
+<meta name="description" content="Portfolio of Taoufik Ammi — Full-Stack Developer, Systems Admin, Cybersecurity Enthusiast. Projects, resume, contact.">
+<link rel="stylesheet" href="assets/css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="brand">
+      <img src="assets/images/me-portrait.jpg" alt="Taoufik Ammi portrait" class="brand-avatar">
+      <div>
+        <h1 class="site-title">Taoufik (Tao) Ammi</h1>
+        <p class="site-subtitle">Full-Stack Developer • Systems Admin • Cybersecurity</p>
+      </div>
+    </div>
+    <button id="navToggle" class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+      ☰<span class="sr-only">Open menu</span>
+    </button>
+    <nav id="primary-navigation" class="primary-nav">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#certs">Certifications</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <!-- HERO -->
+  <section id="home" class="hero container">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <h2 class="eyebrow">Hello — I’m</h2>
+        <h1 class="hero-title">Taoufik (Tao) Ammi</h1>
+        <p class="lead">Systems Administrator with 10+ years experience, now building full-stack apps and learning cybersecurity. I ship clean, maintainable code focused on real-world solutions.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="projects.html">See Projects</a>
+          <a class="btn" href="resume.html">View Resume</a>
+        </div>
+        <ul class="hero-skills">
+          <li>HTML & CSS</li>
+          <li>JavaScript & React</li>
+          <li>SQL & PowerShell</li>
+          <li>Azure AD & DevOps basics</li>
+        </ul>
+      </div>
+      <div class="hero-image">
+        <img src="assets/images/hero-placeholder.png" alt="Hero project placeholder">
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS PREVIEW -->
+  <section id="projects-preview" class="container section">
+    <div class="section-head">
+      <h2>Selected Projects</h2>
+      <p class="muted">Case-study style: problem • role • tech • outcome</p>
+    </div>
+    <div class="projects-grid preview">
+      <article class="project-card">
+        <img src="assets/images/project1-placeholder.png" alt="Project 1 screenshot" class="project-img">
+        <div class="project-body">
+          <h3>Task Manager (Example)</h3>
+          <p><strong>Problem:</strong> Manual task tracking led to missed deadlines.</p>
+          <ul class="project-meta">
+            <li><strong>Role:</strong> Frontend + API integration</li>
+            <li><strong>Tech:</strong> React, Node.js, MongoDB</li>
+          </ul>
+          <p class="project-learn">Outcome: Authenticated app with responsive UI and persistent storage.</p>
+          <div class="project-actions">
+            <a class="link" href="projects.html#task-manager">Details</a>
+            <a class="link" href="https://github.com/lbladma/project1" target="_blank" rel="noopener">Source</a>
+          </div>
+        </div>
+      </article>
+      <article class="project-card">
+        <img src="assets/images/project2-placeholder.png" alt="Project 2 screenshot" class="project-img">
+        <div class="project-body">
+          <h3>Security Dashboard</h3>
+          <p><strong>Problem:</strong> Teams needed lightweight security monitoring.</p>
+          <ul class="project-meta">
+            <li><strong>Role:</strong> Backend + DevOps</li>
+            <li><strong>Tech:</strong> Node.js, Chart.js, Azure</li>
+          </ul>
+          <p>Outcome: Dashboard visualizing suspicious login trends and reports.</p>
+          <div class="project-actions">
+            <a class="link" href="projects.html#security-dashboard">Details</a>
+            <a class="link" href="https://github.com/lbladma/project2" target="_blank" rel="noopener">Source</a>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="center">
+      <a class="btn" href="projects.html">View all projects</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="container section">
+    <h2>About Me</h2>
+    <div class="about-grid">
+      <div class="about-copy">
+        <p>I bring deep operational experience and recent web & cybersecurity training. I enjoy building tools that improve workflows and safety.</p>
+        <p>Outside work I love nature exploring, road trips, and creating content. Based in Dallas, TX — open to remote or hybrid roles.</p>
+      </div>
+      <aside class="about-aside" aria-labelledby="skills-heading">
+        <h3 id="skills-heading">Quick Facts</h3>
+        <ul class="about-list">
+          <li><strong>Experience:</strong> 10+ years Systems Admin</li>
+          <li><strong>Languages:</strong> JavaScript, SQL, PowerShell</li>
+          <li><strong>Tools:</strong> Git, VSCode, Postman</li>
+          <li><strong>Cloud:</strong> Azure (AD, basics)</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certs" class="container section">
+    <h2>Certifications</h2>
+    <ul class="certs-list">
+      <li>Full-Stack Web Dev — UNC Chapel Hill</li>
+      <li>Cybersecurity Career Track — Springboard</li>
+    </ul>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="container section">
+    <h2>Contact</h2>
+    <form id="contactForm" class="contact-form" method="POST" action="#">
+      <div class="form-row">
+        <label for="name">Name</label>
+        <input id="name" name="name" required minlength="2">
+      </div>
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+      </div>
+      <div class="form-row">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <div class="form-actions">
+        <button type="submit" class="btn btn-primary">Send message</button>
+        <div id="formStatus" role="status" aria-live="polite"></div>
+      </div>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> Taoufik Ammi — Dallas, TX</p>
+    <div class="social">
+      <a href="https://linkedin.com/in/lbladma" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/lbladma" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
