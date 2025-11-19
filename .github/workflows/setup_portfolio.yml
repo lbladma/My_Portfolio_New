@@ -1,0 +1,50 @@
+name: Setup Portfolio
+
+on:
+  workflow_dispatch:
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Create folders
+        run: |
+          mkdir -p assets/css assets/js assets/images
+
+      - name: Add placeholder images
+        run: |
+          touch assets/images/me-portrait.jpg
+          touch assets/images/hero-placeholder.png
+          touch assets/images/project1-placeholder.png
+          touch assets/images/project2-placeholder.png
+
+      - name: Add index.html
+        run: |
+          curl -o index.html https://raw.githubusercontent.com/lbladma/My_Portfolio_New/main/files/index.html
+
+      - name: Add projects.html
+        run: |
+          curl -o projects.html https://raw.githubusercontent.com/lbladma/My_Portfolio_New/main/files/projects.html
+
+      - name: Add resume.html
+        run: |
+          curl -o resume.html https://raw.githubusercontent.com/lbladma/My_Portfolio_New/main/files/resume.html
+
+      - name: Add CSS
+        run: |
+          curl -o assets/css/style.css https://raw.githubusercontent.com/lbladma/My_Portfolio_New/main/files/style.css
+
+      - name: Add JS
+        run: |
+          curl -o assets/js/main.js https://raw.githubusercontent.com/lbladma/My_Portfolio_New/main/files/main.js
+
+      - name: Commit & push
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add .
+          git commit -m "Setup sleek modern tech portfolio" || echo "Nothing to commit"
+          git push origin main
